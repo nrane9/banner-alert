@@ -1,0 +1,7 @@
+.banner-alert {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #ff3b38;
+  color: #fff;
+  z-index: 10005;
+}
