@@ -3,7 +3,11 @@
     <div class='banner-alert'>
       {{errorText}}
       <div class='banner-close'>
-        x
+        {{#if customClose}}
+          {{> UI.dynamic template=customClose}}
+        {{else}}
+          x
+        {{/if}}
       </div>
     </div>
   {{/if}}
