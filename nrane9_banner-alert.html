@@ -1,10 +1,8 @@
 <template name="bannerAlert">
   {{#if isError}}
-    <div class='banner-alert flexbox'>
-      <div class='center flex1'>
-        {{errorText}}
-      </div>
-      <div class='right pointer padding-lr banner-close'>
+    <div class='banner-alert'>
+      {{errorText}}
+      <div class='banner-close'>
         x
       </div>
     </div>

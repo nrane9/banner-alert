@@ -9,4 +9,13 @@
   top: 0px;
   left: 0px;
   right: 0px;
+  text-align: center;
+}
+
+.banner-close {
+  padding:8px 12px;
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  right: 0px;
 }
