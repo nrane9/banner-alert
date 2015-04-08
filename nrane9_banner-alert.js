@@ -24,6 +24,13 @@ Template.bannerAlert.helpers({
   }
 });
 
+Template.bannerAlert.events({
+  'click .banner-close': function(){
+    // console.log("")
+    nrBannerText.set('');
+  }
+});
+
 Router.onBeforeAction(function() {
   nrBannerText.set('');
   this.next();
