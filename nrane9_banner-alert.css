@@ -4,4 +4,9 @@
   background-color: #ff3b38;
   color: #fff;
   z-index: 10005;
+  opacity: 0.95;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
 }
