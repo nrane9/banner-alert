@@ -2,12 +2,12 @@ Package.describe({
   name: 'nrane9:banner-alert',
   version: '0.0.2',
   // Brief, one-line summary of the package.
-  summary: 'allows users to add a banner alert underneath the app header',
+  summary: 'allows users to add a fixed position banner alert at top of page',
   // URL to the Git repository containing the source code for this package.
   git: 'https://github.com/nrane9/banner-alert.git',
   // By default, Meteor will default to using README.md for documentation.
   // To avoid submitting documentation, set this field to null.
-  documentation: null//'README.md'
+  documentation: 'README.md'
 });
 
 Package.onUse(function(api) {
