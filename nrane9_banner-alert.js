@@ -1,29 +1,30 @@
 nrAlert = {};
 
-var sessionText = 'nrAlertBanner-text';
+
+var nrBannerText = new ReactiveVar('');
 
 nrAlert.alert = function(text, params) {
-  Session.set(sessionText, text);
+  nrBannerText.set(text);
 };
 
 nrAlert.clear = function(params) {
-  Session.set(sessionText, '');
+  nrBannerText.set('');
 };
 
 Template.bannerAlert.helpers({
   isError: function(){
-    var text = Session.get(sessionText);
+    var text = nrBannerText.get();
     if (text === undefined || text ===''){
       return false;
     }
     return true;
   },
   errorText: function(){
-    return Session.get(sessionText);
+    return nrBannerText.get();
   }
 });
 
 Router.onBeforeAction(function() {
-  Session.set(sessionText, '');
+  nrBannerText.set('');
   this.next();
 });
