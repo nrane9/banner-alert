@@ -1,8 +1,6 @@
-.banner-alert {
+.nr-banner-alert {
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: #ff3b38;
-  color: #fff;
   z-index: 10005;
   opacity: 0.95;
   position: fixed;
@@ -12,7 +10,16 @@
   text-align: center;
 }
 
-.banner-close {
+.nr-banner-error {
+  background-color: #ff3b38;
+  color: #fff;
+}
+.nr-banner-success {
+  background-color: #14ff8a;
+  color: #000;
+}
+
+.nr-banner-close {
   padding:8px 12px;
   cursor: pointer;
   position: absolute;
